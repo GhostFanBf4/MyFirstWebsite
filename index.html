@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title id="Survey-form">Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Survey form about this site</p>
+    <form id="survey-form">
+
+    <fieldset>
+      <label id="name-label">Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+      <label id="email-label">Email
+        <input type="email" id="email" placeholder="Enter your Email" required />
+      </label>
+      <label id="number-label">Age (optional)
+        <input type="number" id="number" placeholder="Age" min="13" max="120"/>
+      </label>
+      <label>What is your relation with the Author
+        <select id="dropdown"> 
+          <option value="">Select relation</option>
+          <option value="family">Family</option> 
+          <option value="close friend">Close friend</option> 
+          <option value="friend">Friend</option> 
+          <option value="alien">I don't know who he is</option> 
+          <option value="other">other</option> 
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>Would you share this site?
+        <label>
+        <input type="radio" name="share" value="yes" class="inline" >Yes
+        </label>
+        <label>
+        <input type="radio" name="share" value="no" class="inline" >No
+        </label>
+        <label>
+        <input type="radio" name="share" value="maybe" class="inline" >Maybe
+        </label>
+      </label>
+      <label>What do you like the most in his site?
+        <select>
+          <option value=".">Select an option</option>
+          <option value="like-colors">Colors</option>
+          <option value="like-style">Style</option>
+          <option value="like-author">The Author</option>
+          <option value="like-other">Other</option>
+          <option value="like-nothing">Nothing</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>What would you like to see improved? (Check all that apply)
+        <label>
+          <input type="checkbox" value="update-colors" class="inline" >Colors
+        </label>
+        <label>
+          <input type="checkbox"value="update-style" class="inline" >Style
+        </label>
+        <label>
+          <input type="checkbox" value="update-author" class="inline" >The Author's programming skills
+        </label>
+        <label>
+          <input type="checkbox" value="update-dontknow" class="inline" >I don't know
+        </label>
+      </label>
+      <label>Other
+        <textarea  rows="3" cols="30" placeholder="Provide your thoughts here..."></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>

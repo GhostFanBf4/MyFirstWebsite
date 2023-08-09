@@ -1,0 +1,60 @@
+body{
+    width:100vw;
+    height: 100vh;
+    margin:0;
+    background-color:rgb(50,50,50);
+    color:rgb(240,240,255);
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  h1,p{
+    margin: 1em auto;
+    text-align:center; 
+  }
+  
+  form{
+    width: 60vw;
+    max-width: 500px;
+    min-width:300px;
+    margin:0 auto;
+    padding: 2em;
+    background-color:rgb(100,100,100);
+    border-radius: 5px;
+  }
+  
+  fieldset,input,select{
+    border: none;
+    padding: 0.5rem 0;
+    
+  }
+  
+  label{
+    display:block;
+    margin: 0.5rem 0;
+  }
+  
+  input,select,textarea{
+    border-radius:5px;
+    margin: 10px 0 0 0;
+    width:100%;
+    
+  }
+  
+  .inline{
+    width:unset;
+    margin:0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type=submit]{
+    display: block;
+    width:60%;
+    margin: 1em auto;
+    height: 2em;
+    min-width: 300px;
+    border:none;
+    color:rgb(240,240,255);
+    background-color:rgb(50,190,50);
+    cursor:pointer;
+  }
